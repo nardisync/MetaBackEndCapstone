@@ -35,8 +35,8 @@ class BookingViewSet(ModelViewSet):
 
 class MenuItemsView(ListCreateAPIView):
 
-    queryset = MenuItem.objects.all()
-    serializer_class = MenuItemSerializer
+    queryset            = MenuItem.objects.all()
+    serializer_class    = MenuItemSerializer
 
     '''
     def post(self, request):
@@ -49,6 +49,6 @@ class MenuItemsView(ListCreateAPIView):
     '''
             
 class SingleMenuItemView(RetrieveUpdateDestroyAPIView):
-    queryset = MenuItem.objects.all()
-    serializer_class = MenuItemSerializer
+    queryset            = MenuItem.objects.all()
+    serializer_class    = MenuItemSerializer
     
